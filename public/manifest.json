@@ -16,7 +16,6 @@
     "default_title": "Ani Redirect",
     "default_popup": "popup.html"
   },
-  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": [
