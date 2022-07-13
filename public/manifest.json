@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Ani Redirect",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Adds in links for free ways to watch any show on LiveChart.me",
   "icons": {
     "16": "icons/icon_16.png",
@@ -19,7 +19,10 @@
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://www.livechart.me/anime/*", "https://www.livechart.me/anime/*/streams"],
+      "matches": [
+        "https://www.livechart.me/anime/*",
+        "https://www.livechart.me/anime/*/streams"
+      ],
       "run_at": "document_idle",
       "js": ["contentScript.js"]
     }
